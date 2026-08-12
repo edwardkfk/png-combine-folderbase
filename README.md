@@ -9,15 +9,16 @@ A lightweight and memory-efficient Python script designed to scan image folders,
 - **Folder-Based Batch Processing**: Converts each subfolder in the root directory into its own dedicated PDF.
 - **Nested Directory Support**: Handles both multi-tiered structures (e.g., Volume -> Chapter -> PNG) and flat structures (e.g., Volume -> PNG).
 - **Natural Sorting**: Correctly sequences numerical filenames (e.g., 1, 2, 10 instead of 1, 10, 2).
-- **Low RAM/VRAM Stream Handling**: Uses image streaming (Image.load() + generators) and garbage collection to process hundreds of high-res images safely without exhausting System RAM/VRAM or causing BSOD crashes.
+- **Low RAM/VRAM Stream Handling**: Uses image streaming (`Image.load()` + generators) and garbage collection to process hundreds of high-res images safely without exhausting System RAM/VRAM or causing BSOD crashes.
 - **Auto RGB Conversion**: Automatically converts RGBA / transparent PNGs to standard RGB for PDF compatibility.
 
 ---
 
 ## 📁 Directory Structure Example
 
-Place build_volumes.py in the root folder containing your image subfolders:
+Place `build_volumes.py` in the root folder containing your image subfolders:
 
+```text
 My_Images_Folder/
 ├── Volume_01/
 │   ├── Chapter_01/
@@ -30,6 +31,7 @@ My_Images_Folder/
 │   └── page2.jpg
 └── build_volumes.py
 
+```
 Running the script will generate:
 - Volume_01.pdf
 - Volume_02.pdf
