@@ -43,7 +43,9 @@ Running the script will generate:
 ### 1. Prerequisites
 Ensure Python 3.x is installed, then install the Pillow library via terminal/command prompt:
 
+```
 pip install Pillow
+```
 
 ### 2. Script Placement
 Copy build_volumes.py into the main directory containing your image subfolders.
@@ -51,8 +53,10 @@ Copy build_volumes.py into the main directory containing your image subfolders.
 ### 3. Execution
 Open Command Prompt / Terminal, navigate to your directory, and run:
 
+```
 cd "path/to/your/main/folder"
 python build_volumes.py
+```
 
 ---
 
@@ -60,7 +64,9 @@ python build_volumes.py
 
 If you prefer not to move build_volumes.py around, you can specify an absolute target directory directly inside the script:
 
+```
 if __name__ == "__main__":
     # Specify your target absolute folder path here
     target_dir = r"C:\Users\fung_\Downloads\Target_Images"
     process_volumes_safe(target_dir)
+```
